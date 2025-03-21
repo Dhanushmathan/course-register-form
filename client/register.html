@@ -10,26 +10,26 @@
 </head>
 
 <body>
-    <div>
-        <form action="" method="">
-            <label for="name">Enter Your Name :</label>
-            <input type="text" id="name" name="name" required>
+    <form action="http://localhost:8080/courses/register" method="post" id="enrollForm">
+        <label for="name">Enter Your Name :</label>
+        <input type="text" id="name" name="name">
 
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="emailId">
 
-            <label for="course">Choose a course :</label>
-            <select id="course" name="course" required>
-                <option value="java">Java</option>
-                <option value="python">Python</option>
-                <option value="javascript">JavaScript</option>
-                <option value="c++">C++</option>
-                <option value="reactjs">ReactJS</option>
-            </select>
+        <label for="course">Choose a course :</label>
+        <select id="course" name="courseName">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="c++">C++</option>
+            <option value="reactjs">ReactJS</option>
+        </select>
 
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

@@ -33,7 +33,7 @@ div>button>a {
 /* Rigister */
 
 form {
-    margin: 100px 300px;
+    margin: 50px 300px;
     padding: 50px;
     border: 2px solid gray;
 }
@@ -44,7 +44,7 @@ input {
     margin-bottom: 10px;
 }
 
-select{
+select {
     width: 103%;
     margin-bottom: 10px;
     padding: 10px;
@@ -83,4 +83,35 @@ form>button {
     border: none;
     outline: none;
     border-radius: 5px;
+}
+
+/* avalible Course */
+
+table {
+    width: 80%;
+    /* border-collapse: collapse; */
+    margin: 50px 0px 50px 170px;
+    font-size: 18px;
+    text-align: center;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
 }

@@ -48,4 +48,13 @@ public class CourseRegister {
         this.courseName = courseName;
     }
 
+    public CourseRegister() {
+    }
+
+    public CourseRegister(String name, String emailId, String courseName) {
+        this.name = name;
+        this.emailId = emailId;
+        this.courseName = courseName;
+    }
+
 }

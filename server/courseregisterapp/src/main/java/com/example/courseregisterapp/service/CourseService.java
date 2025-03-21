@@ -27,4 +27,9 @@ public class CourseService {
         return courseRegisterRepo.findAll();
     }
 
+    public void enrollCourse(String name, String emailId, String courseName) {
+        CourseRegister courseRegister = new CourseRegister(name, emailId, courseName);
+        courseRegisterRepo.save(courseRegister);
+    }
+
 }

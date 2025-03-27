@@ -35,7 +35,7 @@ function showCourse() {
 };
 
 function enrolledTableBodyContanier(){
-    fetch("http://localhost:8080/courses/enrolled")
+    fetch("http://localhost:8080/admin/courses-enrolled")
         .then((res) => res.json())
         .then((data) => {
             data.forEach((course) => {

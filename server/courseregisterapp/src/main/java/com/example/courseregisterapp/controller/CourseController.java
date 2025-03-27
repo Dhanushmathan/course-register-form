@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.courseregisterapp.model.Course;
-import com.example.courseregisterapp.model.CourseRegister;
 import com.example.courseregisterapp.service.CourseService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,14 +20,14 @@ public class CourseController {
     @Autowired
     CourseService courseService;
 
+    @GetMapping("/")
+    public String home() {
+        return "Home Page!!!";
+    }
+
     @GetMapping("courses")
     public List<Course> availableCourses() {
         return courseService.availableCourses();
-    }
-
-    @GetMapping("courses/enrolled")
-    public List<CourseRegister> enrolledStudents() {
-        return courseService.enrolledStudents();
     }
 
     @PostMapping("/courses/register")
